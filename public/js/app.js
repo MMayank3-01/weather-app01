@@ -1,4 +1,4 @@
-// client side javascript
+
 console.log('This is a server side js script')
 const search  = document.querySelector('input')
 const weatherform = document.querySelector('form')
