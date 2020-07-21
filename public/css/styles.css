@@ -1,0 +1,60 @@
+h1 {
+
+color: greenyellow ;
+
+}
+
+footer {
+
+
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top:16px;
+    padding:16px 0;
+
+}
+
+header {
+
+margin-top : 16px;
+margin-bottom : 48 px;
+
+}
+
+/* simply stated there for tags  , for classes there is dot , and for id there is # */
+
+
+h1 {    
+
+
+    font-size : 64px;
+    margin-bottom : 16px;
+}
+
+/*   Below means we are just targetting the a tags of header */
+header a {
+color : #888888;
+margin-right : 16px;
+text-decoration :  none;
+
+}
+
+.potrait  {
+
+    width : 250px;
+}
+
+/*   setting the same style for various element means better consistency */
+input {
+
+ border : 1px solid #cccccc;
+ padding :8px ;
+}
+
+button {
+cursor : pointer;
+border : 1px  solid #888888;
+background: #888888;
+color :white;
+padding :8px;
+}
