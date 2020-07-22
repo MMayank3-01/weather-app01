@@ -6,14 +6,14 @@ const request = require('request');
 
 const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
-const port   =  process.env.PORT ||  30; 
+
 
 // directories for setting the view templates and other assets
 const pathname = path.join(__dirname, '../public') 
 const pathViews = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname,'../templates/partials')
 console.log(pathname)
-
+const port   =  process.env.PORT ||  3000; 
 // for doing the apt settings in express
 app.set('view engine','hbs')
 app.set('views',pathViews)
