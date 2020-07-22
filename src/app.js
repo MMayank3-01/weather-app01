@@ -6,7 +6,7 @@ const request = require('request');
 
 const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
-
+const port   =  process.env.PORT ||  30; 
 
 // directories for setting the view templates and other assets
 const pathname = path.join(__dirname, '../public') 
@@ -92,6 +92,6 @@ app.get(('*'), (req, res) => {
 res.render('404page',{ name : 'Mayank'})
 })
 
-app.listen(3000, () => {
-console.log('Server set up at port 3000')
+app.listen(port, () => {
+console.log('Server set up at port 3000', port)
 })
