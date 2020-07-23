@@ -9,7 +9,7 @@ request({ url , json:true}, (error, response) => {
     }else if( response.body.error){
             callback('  Empty query , please change what you searching for !! ', undefined)
     }else{
-        callback(undefined, 'It is currently '+response.body.current.temperature+' degrees and feels like '+response.body.current.feelslike+' degree centrigrate')
+        callback(undefined, 'It is currently '+response.body.current.temperature+' degrees and feels like '+response.body.current.feelslike+' degree centrigrate. Also cloudcover is '+response.body.current.cloudcover+' and humidity is '+response.body.current.humidity)
     }
 })
 }
